@@ -753,22 +753,102 @@ a {
   gap: 18px;
 }
 
+.people-card-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
 .person-card {
-  min-height: 180px;
+  position: relative;
+  min-height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  background: linear-gradient(145deg, #e7eef7, #fff);
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 24px;
+  border: 1px solid var(--hl-line);
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, .96), rgba(238, 244, 251, .94)),
+    radial-gradient(circle at 8% 0%, rgba(31, 111, 159, .2), transparent 32%);
+  box-shadow: 0 14px 34px rgba(20, 32, 51, .1);
+  text-decoration: none !important;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
 }
 
 .person-card strong {
+  display: block;
   color: var(--hl-ubc-blue);
-  font-size: 20px;
+  font-size: 23px;
+  line-height: 1.15;
 }
 
 .person-card span {
-  margin-top: 8px;
+  display: block;
+  margin-top: 12px;
   color: var(--hl-muted);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.person-card em {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 38px;
+  border-radius: 6px;
+  background: var(--hl-ubc-blue);
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.person-card small {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 22px;
+  color: var(--hl-blue);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.person-card:hover,
+.person-card:focus {
+  transform: translateY(-4px);
+  border-color: rgba(31, 111, 159, .34);
+  box-shadow: 0 20px 44px rgba(20, 32, 51, .14);
+}
+
+.person-card--postdoc em {
+  background: var(--hl-blue);
+}
+
+.person-card--grad em {
+  background: var(--hl-green);
+}
+
+.person-card--undergrad em {
+  background: var(--hl-gold);
+}
+
+.person-card--staff em {
+  background: var(--hl-ink);
+}
+
+.section-heading--with-action {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+
+.section-heading--with-action > div {
+  max-width: 860px;
 }
 
 .publication-list {
@@ -1217,6 +1297,11 @@ a {
 
   .process-list div {
     grid-template-columns: 1fr;
+  }
+
+  .section-heading--with-action {
+    align-items: start;
+    flex-direction: column;
   }
 }
 
