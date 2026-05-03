@@ -542,8 +542,15 @@ a {
 }
 
 .hl-publication {
+  display: block;
   padding: 16px 0;
   border-top: 1px solid rgba(255, 255, 255, .22);
+  text-decoration: none;
+}
+
+.hl-publication:hover strong,
+.hl-publication:focus strong {
+  text-decoration: underline;
 }
 
 .hl-publication strong {
