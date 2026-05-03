@@ -113,7 +113,7 @@ a {
   background:
     linear-gradient(90deg, rgba(0, 22, 48, .98), rgba(0, 33, 69, .84) 48%, rgba(0, 33, 69, .22)),
     linear-gradient(180deg, rgba(0, 0, 0, .1), rgba(0, 33, 69, .35)),
-    url("https://huan.chem.ubc.ca/wp-content/blogs.dir/3789/files/2022/09/LRPS1--scaled.jpg?b=3789&h=900&w=1600&zc=1") center / cover;
+    url("images/lab-team.jpg") center / cover;
 }
 
 .hl-hero__inner {
@@ -327,19 +327,19 @@ a {
 }
 
 .hl-focus-card--sample {
-  background: linear-gradient(rgba(0, 33, 69, .05), rgba(0, 19, 42, .9)), url("https://huan.chem.ubc.ca/wp-content/blogs.dir/3789/files/2020/11/solvent-transfer-scaled.jpg?b=3789&h=650&w=900&zc=1") center / cover;
+  background: linear-gradient(rgba(0, 33, 69, .05), rgba(0, 19, 42, .9)), url("images/sample-prep.jpg") center / cover;
 }
 
 .hl-focus-card--data {
-  background: linear-gradient(rgba(0, 33, 69, .05), rgba(0, 19, 42, .9)), url("https://huan.chem.ubc.ca/wp-content/blogs.dir/3789/files/2020/11/Shipei-and-Huaxu-scaled.jpg?b=3789&h=650&w=900&zc=1") center / cover;
+  background: linear-gradient(rgba(0, 33, 69, .05), rgba(0, 19, 42, .9)), url("images/data-processing.jpg") center / cover;
 }
 
 .hl-focus-card--system {
-  background: linear-gradient(rgba(0, 33, 69, .05), rgba(0, 19, 42, .9)), url("https://huan.chem.ubc.ca/wp-content/blogs.dir/3789/files/2020/11/Shipei-autosampler-scaled.jpg?b=3789&h=650&w=900&zc=1") center / cover;
+  background: linear-gradient(rgba(0, 33, 69, .05), rgba(0, 19, 42, .9)), url("images/lcms-system.jpg") center / cover;
 }
 
 .hl-focus-card--team {
-  background: linear-gradient(rgba(0, 33, 69, .05), rgba(0, 19, 42, .9)), url("https://huan.chem.ubc.ca/wp-content/blogs.dir/3789/files/2022/09/LRPS1--scaled.jpg?b=3789&h=650&w=900&zc=1") center / cover;
+  background: linear-gradient(rgba(0, 33, 69, .05), rgba(0, 19, 42, .9)), url("images/lab-team.jpg") center / cover;
 }
 
 .hl-focus-card__body {
@@ -536,7 +536,7 @@ a {
   .hl-hero {
     background:
       linear-gradient(180deg, rgba(0, 22, 48, .96), rgba(0, 33, 69, .82)),
-      url("https://huan.chem.ubc.ca/wp-content/blogs.dir/3789/files/2022/09/LRPS1--scaled.jpg?b=3789&h=900&w=1200&zc=1") center / cover;
+      url("images/lab-team.jpg") center / cover;
   }
 
   .hl-hero__inner {
@@ -593,26 +593,26 @@ a {
   color: #fff;
   background:
     linear-gradient(90deg, rgba(0, 22, 48, .96), rgba(0, 33, 69, .82)),
-    url("https://huan.chem.ubc.ca/wp-content/blogs.dir/3789/files/2022/09/LRPS1--scaled.jpg?b=3789&h=760&w=1500&zc=1") center / cover;
+    url("images/lab-team.jpg") center / cover;
 }
 
 .page-hero--research {
   background:
     linear-gradient(90deg, rgba(0, 22, 48, .96), rgba(0, 33, 69, .76)),
-    url("https://huan.chem.ubc.ca/wp-content/blogs.dir/3789/files/2020/11/Shipei-autosampler-scaled.jpg?b=3789&h=760&w=1500&zc=1") center / cover;
+    url("images/lcms-system.jpg") center / cover;
 }
 
 .page-hero--people {
   background:
     linear-gradient(90deg, rgba(0, 22, 48, .96), rgba(0, 33, 69, .76)),
-    url("https://huan.chem.ubc.ca/wp-content/blogs.dir/3789/files/2020/11/Shipei-and-Huaxu-scaled.jpg?b=3789&h=760&w=1500&zc=1") center / cover;
+    url("images/data-processing.jpg") center / cover;
 }
 
 .page-hero--publications,
 .page-hero--contact {
   background:
     linear-gradient(90deg, rgba(0, 22, 48, .98), rgba(0, 33, 69, .82)),
-    url("https://huan.chem.ubc.ca/wp-content/blogs.dir/3789/files/2020/11/solvent-transfer-scaled.jpg?b=3789&h=760&w=1500&zc=1") center / cover;
+    url("images/sample-prep.jpg") center / cover;
 }
 
 .page-hero h1 {
