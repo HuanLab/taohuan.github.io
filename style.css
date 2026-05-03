@@ -1049,6 +1049,113 @@ a {
   line-height: 1.45;
 }
 
+.member-overview {
+  position: relative;
+  z-index: 2;
+  margin-top: -42px;
+}
+
+.member-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--hl-line);
+  border-radius: 8px;
+  background: var(--hl-line);
+  box-shadow: var(--hl-glow);
+}
+
+.member-overview-grid article {
+  min-height: 112px;
+  padding: 22px;
+  background: #fff;
+}
+
+.member-overview-grid strong {
+  display: block;
+  color: var(--hl-blue);
+  font-size: 32px;
+  line-height: 1;
+}
+
+.member-overview-grid span {
+  display: block;
+  margin-top: 8px;
+  color: var(--hl-muted);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 26px;
+}
+
+.member-grid--featured {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.member-card {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 22px;
+  min-height: 260px;
+  padding: 18px;
+  border: 1px solid var(--hl-line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(20, 32, 51, .08);
+}
+
+.member-grid--featured .member-card {
+  grid-template-columns: 220px 1fr;
+  min-height: 300px;
+}
+
+.member-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  border-radius: 6px;
+  object-fit: cover;
+  object-position: center top;
+  background: #e7eef7;
+}
+
+.member-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--hl-blue);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.member-card h3 {
+  margin: 0 0 10px;
+  color: var(--hl-ubc-blue);
+  font-size: 25px;
+  line-height: 1.15;
+}
+
+.member-card p {
+  margin: 0;
+  color: var(--hl-muted);
+  line-height: 1.6;
+}
+
+.member-card p + p {
+  margin-top: 10px;
+}
+
+.person-card {
+  text-decoration: none !important;
+}
+
 @media (max-width: 900px) {
   .site-header {
     position: static;
@@ -1066,12 +1173,16 @@ a {
   .profile-lead,
   .profile-hero-grid,
   .profile-facts-grid,
+  .member-overview-grid,
   .bio-layout,
   .people-card-grid,
   .contact-grid,
   .timeline-grid,
   .award-timeline,
-  .affiliation-grid {
+  .affiliation-grid,
+  .member-grid,
+  .member-grid--featured .member-card,
+  .member-card {
     grid-template-columns: 1fr;
   }
 
@@ -1093,6 +1204,15 @@ a {
 
   .profile-facts {
     margin-top: 0;
+  }
+
+  .member-overview {
+    margin-top: 0;
+  }
+
+  .member-card img {
+    height: auto;
+    aspect-ratio: 4 / 5;
   }
 
   .process-list div {
